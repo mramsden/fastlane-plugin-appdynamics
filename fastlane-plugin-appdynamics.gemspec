@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'artur.rybak@gmail.com'
 
   spec.summary       = 'Upload dSYM files to AppDynamics'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-appdynamics"
+  spec.homepage      = "https://github.com/wedkarz/fastlane-plugin-appdynamics"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
