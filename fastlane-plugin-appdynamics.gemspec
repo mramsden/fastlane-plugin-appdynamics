@@ -1,4 +1,5 @@
 # coding: utf-8
+
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'fastlane/plugin/appdynamics/version'
@@ -6,10 +7,10 @@ require 'fastlane/plugin/appdynamics/version'
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-appdynamics'
   spec.version       = Fastlane::Appdynamics::VERSION
-  spec.author        = %q{Artur Rybak}
-  spec.email         = %q{artur.rybak@gmail.com}
+  spec.author        = 'Artur Rybak'
+  spec.email         = 'artur.rybak@gmail.com'
 
-  spec.summary       = %q{Upload dSYM files to AppDynamics}
+  spec.summary       = 'Upload dSYM files to AppDynamics'
   # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-appdynamics"
   spec.license       = "MIT"
 

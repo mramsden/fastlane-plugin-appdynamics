@@ -42,7 +42,7 @@ module Fastlane
         # Verify dsym(s)
         dsym_paths = dsym_paths.map { |path| File.absolute_path(path) }
         dsym_paths.each do |path|
-          UI.user_error!("dSYM does not exist at path: #{path}") unless File.exists? path
+          UI.user_error!("dSYM does not exist at path: #{path}") unless File.exist? path
         end
 
         # Upload dsym(s)
@@ -51,7 +51,6 @@ module Fastlane
         end
 
         UI.success 'dSYMs successfully uploaded to AppDynamics!'
-
       end
 
       def self.upload_dsym(dsym, host, api_account_name, api_license_key)
@@ -79,7 +78,7 @@ module Fastlane
       end
 
       def self.details
-          [
+        [
           "This action allows you to upload symbolication files to AppDynamics.",
           "It's extra useful if you use it to download the latest dSYM files from Apple when you",
           "use Bitcode."
