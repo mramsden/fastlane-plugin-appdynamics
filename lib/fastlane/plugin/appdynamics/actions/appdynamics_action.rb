@@ -64,7 +64,7 @@ module Fastlane
           request.body = Faraday::UploadIO.new(dsym, content_type)
         end
 
-        puts response
+        UI.user_error! "Failed uploading dSYM to AppDynamics" unless response.success?
       rescue Exception => exception
         UI.user_error! "Error while trying to upload dSYM to AppDynamics: #{exception}"
       end
